@@ -1,11 +1,12 @@
 #  <obsnum>   <comment>     # <SLpipeline args>
 #
 
-# based on the _test run covering most of the band
+# based on the __wide run covering most of the band
 
-156159__1   1,7 bad                  # pix_list=-1,7,15
-156134__0    bad beam 3              # pix_list=-3,13
-156134__1    bad beam 1              # pix_list=-1,13,15
+156134__0    bad 3                   # pix_list=-3,13
+156134__1    bad 1                   # pix_list=-1,13,15
 156138__0    1                       # pix_list=-1,13
 156141__1    1                       # pix_list=-1,13,15
 156145__1    1                       # pix_list=-1,13,15
+156159__1    1,7 bad                 # pix_list=-1,7,15
+156495__1    1                       # pix_list=-1,13,15

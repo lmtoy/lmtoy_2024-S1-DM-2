@@ -16,30 +16,35 @@ on["MWC1_freq1"] = \
  [ 155800, 155801, 155802, 155804, 155805, 155806, 155810, 155811, 155812,]
 
 on["MWC1_freq2"] = \
- [ 156134, 156138, 156141, 156145, 156159, 156161, 156163,]
+ [ 156134, 156138, 156141, 156145, 156159, 156161, 156163,
+   156495, 156497, 156499, # May-4-26 + May-8-26
+  ]
 
 on["MWC1_c18o"] = on["MWC1_freq1"] + on["MWC1_freq2"]
 on["MWC1_13co"] = on["MWC1_freq1"] + on["MWC1_freq2"]
+on["MWC1_wide"] = on["MWC1_freq1"] + on["MWC1_freq2"]
+
 
 # parameters for the first pass of the pipeline (restart=1 is automatically enforced here)
 pars1 = {}
 
-pars1["MWC1_freq1"] = "vlsr=164 dv=50 dw=50 pix_list=-13,15 bank=1   oid=CO"
-pars1["MWC1_freq2"] = "vlsr=164 dv=50 dw=50 pix_list=-13,15 bank=1   oid=CN"
-pars1["MWC1_c18o"]  = "vlsr=-406 dv=50 dw=50 pix_list=-13 bank=0     oid=C180"
-pars1["MWC1_13co"]  = "vlsr=+736 dv=100 dw=100 pix_list=-13 bank=0   oid=13CO"
+pars1["MWC1_freq1"] = "vlsr=163  dv=50  dw=100 pix_list=-13,15 bank=1   oid=CO"
+pars1["MWC1_freq2"] = "vlsr=163  dv=100 dw=100 pix_list=-13,15 bank=1   oid=CN"
+pars1["MWC1_c18o"]  = "vlsr=-406 dv=50  dw=100 pix_list=-13    bank=0   oid=C180"
+pars1["MWC1_13co"]  = "vlsr=+736 dv=50  dw=100 pix_list=-13    bank=0   oid=13CO"
+pars1["MWC1_wide"]  = "vlsr=163  dv=50  dw=600 pix_list=-15             oid=wide"
 
 # parameters for the (optional) second pass of the pipeline (e.g. for bank=0)
 pars2 = {}
 
-pars2["MWC1_freq1"] = "pix_list=-13"
-pars2["MWC1_freq2"] = "pix_list=-13"
+pars2["MWC1_freq1"] = "bank=1  oid=CO"
+pars2["MWC1_freq2"] = "bank=1  oid=CN"
+pars2["MWC1_c18o"]  = "bank=0  oid=C18O"
+pars2["MWC1_13co"]  = "bank=0  oid=13CO"
+
 
 # parameters for the (optional) third pass of the pipeline (usually for bank=1)
 pars3 = {}
-
-pars3["MWC1_freq1"] = ""
-pars3["MWC1_freq2"] = ""
 
 # Found 2 source(s) for 2024-S1-DM-2
 
