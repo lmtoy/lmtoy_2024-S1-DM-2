@@ -26,21 +26,24 @@ on["MWC1_wide"] = on["MWC1_freq1"] + on["MWC1_freq2"]
 
 
 # parameters for the first pass of the pipeline (restart=1 is automatically enforced here)
+# optionally speeding up with:    meta=0 srdp=0 sdfits=0
+fast = " meta=0 srdp=0 sdfits=0"
+
 pars1 = {}
 
-pars1["MWC1_freq1"] = "vlsr=163  dv=50  dw=100 pix_list=-13,15 bank=1   oid=CO"
-pars1["MWC1_freq2"] = "vlsr=163  dv=100 dw=100 pix_list=-13,15 bank=1   oid=CN"
-pars1["MWC1_c18o"]  = "vlsr=-406 dv=50  dw=100 pix_list=-13    bank=0   oid=C180"
-pars1["MWC1_13co"]  = "vlsr=+736 dv=50  dw=100 pix_list=-13    bank=0   oid=13CO"
-pars1["MWC1_wide"]  = "vlsr=163  dv=50  dw=600 pix_list=-15             oid=wide"
+pars1["MWC1_freq1"] = "vlsr=163  dv=50  dw=100 pix_list=-13,15 bank=1   oid=__CO    %s" % fast
+pars1["MWC1_freq2"] = "vlsr=163  dv=100 dw=100 pix_list=-13,15 bank=1   oid=__CN    %s" % fast
+pars1["MWC1_13co"]  = "vlsr=-406 dv=50  dw=100 pix_list=-13    bank=0   oid=__13CO  %s" % fast
+pars1["MWC1_c18o"]  = "vlsr=+736 dv=50  dw=100 pix_list=-13    bank=0   oid=__C18O  %s" % fast
+pars1["MWC1_wide"]  = "vlsr=163  dv=50  dw=950 pix_list=-15             oid=__wide  %s" % fast
 
 # parameters for the (optional) second pass of the pipeline (e.g. for bank=0)
 pars2 = {}
 
-pars2["MWC1_freq1"] = "bank=1  oid=CO"
-pars2["MWC1_freq2"] = "bank=1  oid=CN"
-pars2["MWC1_c18o"]  = "bank=0  oid=C18O"
-pars2["MWC1_13co"]  = "bank=0  oid=13CO"
+pars2["MWC1_freq1"] = "bank=1  oid=__CO"
+pars2["MWC1_freq2"] = "bank=1  oid=__CN"
+pars2["MWC1_13co"]  = "bank=0  oid=__13CO"
+pars2["MWC1_c18o"]  = "bank=0  oid=__C18O"
 
 
 # parameters for the (optional) third pass of the pipeline (usually for bank=1)
