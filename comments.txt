@@ -16,3 +16,26 @@
 #155800_156499__C180  final C18O      # oid=__C18O
 #155800_155812__CO    final CO        # oid=__CO
 #155800_156499__13CO  final 13CO      # oid=__13CO
+
+
+# wide waterfall
+#          bank=0    bank=1
+# 155800   -         4(edge)
+# 155801   -	     -
+# 155802   -	     -
+# 155804   1(edge)   -
+# 155805   -	     -
+# 155806   -	     -
+# 155810   -	     -
+# 155811   -	     2(last)
+# 155812   -	     2(last)
+# 156134   3 (2,bit) 1(early ripple)
+# 156138   1(rippl)  -
+# 156141   -	     1(ripple)
+# 156145   -	     1(ripple)
+# 156159   -	     1,7(ripple)         bank=1 has low level ripples a lot
+# 156161   -	     -
+# 156163   -	     -		         bank=1 some low= level riupples in 1
+# 156495   -	     1(ripple)
+# 156497   -	     -
+# 156499   -	     -
