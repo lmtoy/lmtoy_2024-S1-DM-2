@@ -10,10 +10,10 @@ to the 12CO and CN lines.
 
 Tuned to vlsr=163 km/s
 
-- 12CO:  strong
-- C18O:  clear
-- 13CO:  maybe
-- CN:    nothing yet
+- 12CO:  115.271  strong     
+- 13CO:  110.210  clear      at vlsr ~ -405 for 109.992   
+- C18O:  109.782  maybe      at vlsr ~ +734 for 109.992
+- CN:    113.491  nothing yet
 
 ## Multiple lines
 
