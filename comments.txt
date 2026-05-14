@@ -10,3 +10,9 @@
 156145__1    1                       # pix_list=-1,13,15
 156159__1    1,7 bad                 # pix_list=-1,7,15
 156495__1    1                       # pix_list=-1,13,15
+
+
+#156134_156499__CN    final CN        # oid=__CN
+#155800_156499__C180  final C18O      # oid=__C18O
+#155800_155812__CO    final CO        # oid=__CO
+#155800_156499__13CO  final 13CO      # oid=__13CO
