@@ -1,15 +1,18 @@
 #  <obsnum>   <comment>     # <SLpipeline args>
 #
 
-# based on the __wide run covering most of the band
+# see the __wide waterfalls for bad beams
 
-156134__0    bad 3                   # pix_list=-3,13
-156134__1    bad 1                   # pix_list=-1,13,15
-156138__0    1                       # pix_list=-1,13
-156141__1    1                       # pix_list=-1,13,15
-156145__1    1                       # pix_list=-1,13,15
-156159__1    1,7 bad                 # pix_list=-1,7,15
-156495__1    1                       # pix_list=-1,13,15
+
+#155800__1    4?  CO                   # pix_list=-4,15
+
+156134__0    3   C18O/13CO            # pix_list=-3,13
+156134__1    1   CN                   # pix_list=-1,13,15
+156138__0    1   C18O/13CO            # pix_list=-1,13
+156141__1    1   CN                   # pix_list=-1,13,15
+156145__1    1   CN                   # pix_list=-1,13,15
+156159__1    1,7 CN                   # pix_list=-1,7,13,15
+156495__1    1   CN                   # pix_list=-1,13,15
 
 
 #156134_156499__CN    final CN        # oid=__CN
