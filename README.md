@@ -1,6 +1,7 @@
 # 2024-S1-DM-2
 
-this DDT project observes the Taurus Molecular Cloud-1 in an interesting spectral setup:
+this DDT project observes the Taurus Molecular Cloud-1 (calls MWC1 here)
+with an interesting spectral setup
 
 bank=1 observed 12CO and CN in two "freq1" and "freq2" source names.
 
