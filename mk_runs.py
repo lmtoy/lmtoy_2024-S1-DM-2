@@ -17,7 +17,7 @@ on["MWC1_freq1"] = \
 
 on["MWC1_freq2"] = \
  [ 156134, 156138, 156141, 156145, 156159, 156161, 156163,
-   156495, 156497, 1156499, # May-4-26 + May-8-26
+   156495, 156497, 156499, # May-4-26 + May-8-26
   ]
 
 on["MWC1_c18o"] = on["MWC1_freq1"] + on["MWC1_freq2"]
@@ -38,7 +38,7 @@ pars1["MWC1_freq2"] = "vlsr=163  dv=100 dw=100 pix_list=-13,15 bank=1   oid=__CN
 pars1["MWC1_13co"]  = "vlsr=-406 dv=50  dw=100 pix_list=-13    bank=0   oid=__13CO  %s" % fast
 pars1["MWC1_c18o"]  = "vlsr=+736 dv=50  dw=100 pix_list=-13    bank=0   oid=__C18O  %s" % fast
 pars1["MWC1_wide"]  = "vlsr=163  dv=50  dw=950 pix_list=-15             oid=__wide  %s" % fast
-pars1["MWC1_test"]  = "vlsr=165  dv=50  dw=100 pix_list=-13,15 bank=0   oid=__test  %s restfreq=110.210" % fast
+#pars1["MWC1_test"]  = "vlsr=165  dv=50  dw=100 pix_list=-13,15 bank=0   oid=__test  %s restfreq=110.210" % fast
 
 # parameters for the (optional) second pass of the pipeline (e.g. for bank=0)
 pars2 = {}
