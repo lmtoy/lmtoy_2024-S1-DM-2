@@ -43,8 +43,6 @@ pars1["MWC1_wide"]  = "vlsr=163  dv=50  dw=950 pix_list=-15             oid=__wi
 # parameters for the (optional) second pass of the pipeline (e.g. for bank=0)
 pars2 = {}
 
-pars2["MWC1_freq1"] = "bank=1  %s" % fast
-pars2["MWC1_freq2"] = "bank=1  %s" % fast
 pars2["MWC1_13co"]  = "bank=0  %s" % fast
 pars2["MWC1_c18o"]  = "bank=0  %s" % fast
 
